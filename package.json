@@ -1,0 +1,30 @@
+{
+	"name": "to-do-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"start": "node back/server",
+		"server": "nodemon back/server"
+	},
+	"author": "Ilia (Delo's)",
+	"license": "ISC",
+	"dependencies": {
+		"bcryptjs": "^2.4.3",
+		"cookie-parser": "^1.4.5",
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"express-async-handler": "^1.2.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.0.12",
+		"react-native-gesture-handler": "^1.10.3"
+	},
+	"devDependencies": {
+		"colors": "^1.4.0",
+		"concurrently": "^6.3.0",
+		"morgan": "^1.10.0",
+		"nodemon": "^2.0.14"
+	}
+}
