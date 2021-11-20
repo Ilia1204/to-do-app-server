@@ -42,14 +42,14 @@ app.use(errorHandler)
 
 const PORT = process.env.PORT || 5000
 
-app.listen(
-	PORT,
-	console.log(
-		`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
-	)
-)
+// app.listen(
+// 	PORT,
+// 	console.log(
+// 		`Server running in ${process.env.NODE_ENV} mode on port ${PORT}`.yellow.bold
+// 	)
+// )
 
-const server = app.listen(process.env.PORT || 5000, () => {
-	const port = server.address().port
-	console.log(`Server running in production mode on port ${port}`.yellow.bold)
+let server = app.listen(PORT, () => {
+	let port = server.address().port
+	console.log(`Server running is production mode on port ${port}`.yellow.bold)
 })
